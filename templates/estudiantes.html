@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listado de Estudiantes</title>
+</head>
+<body>
+    <h1>Listado de Estudiantes</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        {% for estudiante in estudiantes %}
+        <tr>
+            <td>{{ estudiante[0] }}</td>
+            <td>{{ estudiante[1] }}</td>
+            <td>{{ estudiante[2] }}</td>
+            <td>{{ estudiante[3] }}</td>
+            <td>{{ estudiante[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
