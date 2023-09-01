@@ -12,6 +12,7 @@ connection_string = r"DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\U
 def connect_db():
     return pyodbc.connect(connection_string)
 
+# Creé un html para la página de bienvenida
 @app.route("/")
 def index():
     return render_template("index.html")
